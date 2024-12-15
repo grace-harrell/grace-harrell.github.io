@@ -1,0 +1,78 @@
+
+body {
+    color:rgb(220, 142, 93);
+    background-color: rgb(248, 255, 204);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  a {
+    color:rgb(220, 142, 93);
+  }
+
+  a:active {
+    color:rgb(56, 147, 58);
+  }
+  a:hover {
+    color:rgb(56, 147, 58);
+  }
+  
+  h1 {
+    color: rgb(246, 246, 204);
+    margin-left: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .container {
+    display: flex; /* Enables flexbox layout */
+  }
+  
+  aside {
+    width: 27%; /* Adjust the sidebar width as needed */
+    background-color: rgb(255, 236, 169);
+    box-shadow: rgb(15, 14, 9);
+    border-radius: 15px;
+    height: 100vh; /* Full height */
+    margin-right: 20px; /* Optional: space between sidebar and main content */
+  }
+  
+  .main {
+    flex-grow: 1; /* Makes sure the main content takes up remaining space */
+    padding: 20px;
+  }
+  
+  aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px rgb(15, 14, 9);
+    position: relative;
+    top: 1.5rem;
+    transition:all 0.3s ease;
+
+    /* Other styles for sidebar */
+  }
+
+  aside .sidebar:hover{
+    box-shadow: none;
+
+  }
+  
+  aside .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+  }
+
+  aside .sidebar a{
+    display: flex;
+    align-items: center;
+    height: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+
+
+  }
+  
