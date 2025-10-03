@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
-    background-color: rgb(64, 245, 178)
+    background-color: rgb(247, 246, 194);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
 }
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
 .sr-only{
     border: 0;
     clip: rect(0,0,0,0);
@@ -8,7 +21,38 @@ body{
     margin: -1px;
     overflow: hidden;
     padding: 0;
-    poasition: absolute;
+    position: absolute;
     white-space: nowrap;
     width: 1px;
     }
+h1 {
+    font-family: "Roboto Serif", serif;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Roboto Serif", serif;
+}
+
+h3 {
+    font-family: "Roboto Serif", serif;
+ }
+
+p {
+    line-height: 1.6em;
+    text-indent: 50px;
+    margin-bottom: 25px;
+}
+
+nav ul li a:link {
+    color: rgb(212, 128, 18);
+}
+nav ul li a:visited {
+    color: rgb(201, 14, 207);
+}
+nav ul li a:hover {
+    color: rgb(201, 14, 207);
+}
+nav ul li a:active {
+    color: white;
+}

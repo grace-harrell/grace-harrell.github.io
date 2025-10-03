@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color: #FFFDF7;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
 .sr-only{
     border: 0;
     clip: rect(0,0,0,0);
@@ -5,7 +21,47 @@
     margin: -1px;
     overflow: hidden;
     padding: 0;
-    poasition: absolute;
+    position: absolute;
     white-space: nowrap;
     width: 1px;
     }
+
+ h1{
+    font-family: "Roboto Serif", serif;
+ }
+
+h2{
+    font-family: "Roboto Serif", serif;
+ }
+h3{
+    font-family: "Roboto Serif", serif;
+ }
+h4{
+    font-family: "Roboto Serif", serif;
+ }
+
+figure{
+    background-color:#FEE7BF;
+    padding: 16px;
+}
+
+figcaption{
+    font-size: 16px;
+ }
+
+a:link {
+    color:#C2512F;
+    text-decoration: none;
+}
+a:visited {
+    color:#68296E;
+    text-decoration: none;
+}
+a:hover {
+    font-style: normal;
+    text-decoration: underline;
+}
+a:active {
+    color:#911647;
+    text-decoration: none;
+}
