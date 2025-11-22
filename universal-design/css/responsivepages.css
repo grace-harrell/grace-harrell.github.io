@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+h1,
+h2,
+h3{
+    font-family: serif;
+    font-weight: normal;
+    padding: .2em 0;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 1.5em;
+    border: 1px black solid;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(175, 222, 176);
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns:
+    1fr       2f4      1fr;
+    grid-template-areas: 
+    "heady      heady     heady"
+    "navvy      navvy     navvy"
+    "aside1     mainy     aside2"
+    "aside1     mainy     aside2"
+    "aside1     mainy     aside2"
+    "aside1     mainy     aside2"
+    "footy      footy     footy";
+
+}
+
+header {grid-area: heady; background: lightsalmon;}
+nav {grid-area: navvy; background: lightpink;}
+main {grid-area: mainy; background: lightgreen;}
+#aside1 {grid-area: aside1; background: lavender;}
+#aside2 {grid-area: aside2; background: lightseagreen;}
+footer {grid-area: footy; background: lightsalmon;}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+/* check out flexbox froggy */

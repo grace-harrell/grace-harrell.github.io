@@ -3,11 +3,111 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Visitor Log |</title>
+        <title>Cheese Hub</title>
         <link rel="stylesheet" href="css/assignment2.css">
         <script src="https://kit.fontawesome.com/2783be1e6d.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
+        <div class="container"> <!-- start of container -->
+            <header>
+                <a class="skip-link" id="skip-link" href="#cheese-quiz"> Skip to main content</a>
+                <h1>Cheese Hub</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#cheese-quiz">Cheese Form</a></li>
+                        <li><a href="#cheese-chart">About the Cheeses</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section  id="cheese-quiz">
+                    <h2>Cheese Form</h2>
+                         <form id="cheese-form" method="post">
+                            <fieldset>
+                                <legend> Submit your favorite cheese!</legend>
+                                <label for="cheese-name">
+                                    What's the cheese called?
+                                    <input type="text" id="cheese-name" placeholder="Gruyere" required>
+                                </label>
+                                <br>
+                                <br>
+                                <label for="cheese-flavor">
+                                    Give a short descriptions of the flavor. <br>
+                                    <textarea id="cheese-flavor" rows="4"placeholder="Smokey, nutty, fruity."></textarea>
+                                </label>
+                                <br>
+                                <br>
+                                Textures of the cheese: <br>
+                                <input type="checkbox" id="texture1" name="texture1" value="Soft">
+                                <label for="texture1"> Soft</label><br>
+                                <input type="checkbox" id="texture2" name="texture2" value="Semi-soft">
+                                <label for="texture2"> Semi-soft</label><br>
+                                <input type="checkbox" id="texture3" name="texture3" value="Semi-firm">
+                                <label for="texture3"> Semi-firm</label><br>
+                                <input type="checkbox" id="texture4" name="texture3" value="Firm">
+                                <label for="texture4"> Firm</label><br>
+                                <br>
+                                <input type="Submit" id="submit">
+                            </fieldset>
+                        </form>
+                </section>
+                <br>
+                <section  id="cheese-chart">
+                    <h2>Cheese Chart</h2>
+                    <table>
+                        <caption>
+                            Table of types of cheeses, their flavors, textures, and reccomended food pairings.
+                        </caption>
+                        <tr>
+                            <td style="background-color: #FEE7BF;"></td>
+                            <th scope="col">Mozzarella</th>
+                            <th scope="col">Cheddar</th>
+                            <th scope="col">Swiss</th>
+                            <th scope="col">Gouda</th>
+                            <th scope="col">Brie</th>
+                            <th scope="col">Parmesan</th>
+                            <th scope="col">American</th>
+                            <th scope="col">Pepperjack</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Flavor</th>
+                            <td>Mild, milky, tangy.</td>
+                            <td>Sharp, pungent, buttery.</td>
+                            <td>Milk, nutty, sweet.</td>
+                            <td>Rich, smokey, nutty.</td>
+                            <td>Buttery, earthy, mushroom.</td>
+                            <td>Umami, sharp, tangy.</td>
+                            <td>Mild, salty, creamy.</td>
+                            <td>Spicy, peppery, creamy. </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Texture</th>
+                            <td>Soft, moist, and creamy, melting easily on the tongue</td>
+                            <td>Ranges from from hard to semi-hard. Slightly crumbly.</td>
+                            <td>Smooth and semi-firm.</td>
+                            <td>Smooth, creamy, and semi-hard.</td>
+                            <td>Soft-ripened, gooey.</td>
+                            <td>Hard and granular.</td>
+                            <td>Smooth and meltable.</td>
+                            <td>Semi-soft, melts easily.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pairings</th>
+                            <td>Tomatos, basil, and pesto.</td>
+                            <td>Apples, pears, fig jam, and pickled items.</td>
+                            <td>Cured meats, salted nuts, and white wine</td>
+                            <td>Chocolate, chili jam, prosciutto.</td>
+                            <td>Cranberry, honey, pears.</td>
+                            <td>Soups, salads, balsamic vinegar.</td>
+                            <td>Burger, macaroni carmelized onions.</td>
+                            <td>Mangos, IPAs, sweet jams.</td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
+        </div> <!-- end of container  -->
+        
     </body>
 </html>

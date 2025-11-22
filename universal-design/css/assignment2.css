@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #FFFDF7;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+ h1{
+    font-family: "Roboto Serif", serif;
+ }
+
+h2{
+    font-family: "Roboto Serif", serif;
+ }
+h3{
+    font-family: "Roboto Serif", serif;
+ }
+h4{
+    font-family: "Roboto Serif", serif;
+ }
+
+figure{
+    background-color:#FEE7BF;
+    padding: 16px;
+}
+
+figcaption{
+    font-size: 16px;
+ }
+
+a:link {
+    color:#C2512F;
+    text-decoration: none;
+}
+a:visited {
+    color:#68296E;
+    text-decoration: none;
+}
+a:hover {
+    font-style: normal;
+    text-decoration: underline;
+}
+a:active {
+    color:#911647;
+    text-decoration: none;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+}
+
+.sr-only{
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.nav-button {
+    border-style: none;
+    background-color: #FFFDF7;
+    position: relative;
+    bottom: 1px;
+    right: 15px;
+    float: left;
+    margin: 12px;
+}
+
+.nav-icon {
+    font-size: 20px;
+}
+.nav-icon:hover {
+    color:#C2512F;
+}
+
+table, th, td {
+    border-collapse:collapse; 
+    border: 2px solid #C2512F; 
+    width: 60%;
+     margin: 50px auto;
+}
+
+table {
+    margin-bottom: 30px;
+}
+caption{
+    margin-bottom: 20px;
+}
+th {
+    padding: 10px 20px;
+    background-color: #FEE7BF;
+}
+td {
+    border: 2px solid #C2512F;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+.skip-link {
+    background: black;
+    color: #fff;
+    
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+}
+.skip-link:focus {
+    transform: translateY(-100%);
+}
+.skip-link {
+    transform: 0.3s;
+}
+
+textarea{
+    border: 2px solid black;
+    margin-top: 5px;
+}

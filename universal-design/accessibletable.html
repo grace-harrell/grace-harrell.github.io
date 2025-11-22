@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/accessibletable.css">
+    <title>Table Example</title>
+</head>
+<body>
+    <header>
+        <h1> Accessible Table</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Table Example</h2>
+        </section>
+        <table>
+            <caption>
+                Animals that can kill you
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Lions</th>
+                    <th scope="col">Tigers</th>
+                    <th scope="col">Bears</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Cecil</td>
+                <td>Tygra</td>
+                <td>Baloo</td>
+            </tr>
+            <tr>
+                <td>Mufasa</td>
+                <td>Tony</td>
+                <td>Yogi</td>
+            </tr>
+            <tr>
+                <td>Simba</td>
+                <td>Stripes</td>
+                <td>Smokey</td>
+            </tr>
+        </table>
+
+        <section>S
+            <h2>Form Example</h2>
+            <form is="myform" method="post">
+                <fieldset>
+                    <legend> Give us your infomration!</legend>
+                    <label for="username">what's yourname?
+                        <input type="text" id="username" placeholder="first last">
+                    </label>
+
+                    <label for="password">
+                        what is your favorite password \J
+                        <input type="text" id="password" maxlength="20" minlength="5" pattern="(?=.*\d)(?=.*[a-z])(?=.[A-Z])(?=.[@#$%^&+!=]).*" required>
+                        <ul class="inputRequirments">
+                            <li>must be at least 5 characters long and contain an uppercase a lowercase and a symbol</li>
+                        </ul>
+                    </label>
+                    <input type="submit">
+                </fieldset>
+        
+            </form>
+        </section>
+    </main>
+</body>
+</html>
