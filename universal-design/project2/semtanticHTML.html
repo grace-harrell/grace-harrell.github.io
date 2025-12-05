@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+     <link rel="stylesheet" href="../css/project2.css">
+</head>
+<body>
+    <header>
+        <h1>Semantic HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="universal_design_final_project.html">Home</a></li>
+                <li><a href="principlesOfDesign.html">Principles of Design</a></li>
+                <li><a href="semtanticHTML.html">Semantic HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>What is Semantic HTML?</h2>
+                        <p>HTML is often messy. A lot of what you see online has too many div containters and not enough headings. This makes it especially difficult for users with screen readers to access to internet.</p>
+            <p>Semantic HTML means using HTML tages related to the meaning of the structure and content of your page. Not only does this make a site accessible, but it makes your code clear and concise.</p>
+        </section>
+        <br>
+        <section>
+            <h2>Tags</h2>
+            <p>Lets go over the semantic meaning of common tags...</p>
+            <ul>
+                <li>&lt;header&gt; — Introductory content for a page or section.</li>
+                <li>&lt;footer&gt; — Closing section containing metadata or links.</li>
+                <li>&lt;h1 ... h6&gt; — Hierarchical headings that structure content.</li>
+                <li>&lt;main&gt; — The primary, unique content of the page.</li>
+                <li>&lt;nav&gt; — Major navigational links for the site or section.</li>
+                <li>&lt;section&gt; — A thematic grouping of related content.</li>
+                <li>&lt;aside&gt; — Supplementary or tangential information.</li>
+                <li>&lt;figcaption&gt; — A caption describing a figure.</li>
+            </ul>
+
+        </section>
+        <br>
+        <section>
+            <section>
+    <h2>Structure</h2>
+
+    <p>
+        A typical structure begins with a &lt;header&gt; that introduces the site or page, 
+        often followed by a &lt;nav&gt; element containing the main navigation links. 
+        The core content is placed inside &lt;main&gt;, which should appear only once 
+        and contain the primary information users come for.
+    </p>
+
+    <p>
+        Within &lt;main&gt;, you can divide content using &lt;section&gt; to establish 
+        thematic areas or &lt;article&gt;for pieces of content that could stand alone. 
+        Headings (&lt;h1&gt; through &lt;h6&gt;) should be used in order to create a clear outline 
+        that reflects your content hierarchy. Supplementary or tangential information, such as sidebars 
+        or related links, belongs inside an &lt;aside&gt; so that assistive technologies can easily 
+        distinguish it from the main flow. Finally, a &lt;footer&gt; closes the page or section with 
+        metadata, links, or additional information.
+    </p>
+
+    <h3>Example of a Semantic Page Structure</h3>
+
+    <pre><code>
+&lt;header&gt;
+    &lt;h1&gt;My Web Development Blog&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;a href="/"&gt;Home&lt;/a&gt;
+        &lt;a href="/tutorials"&gt;Tutorials&lt;/a&gt;
+        &lt;a href="/about"&gt;About&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Latest Posts&lt;/h2&gt;
+
+        &lt;article&gt;
+            &lt;h3&gt;Understanding Semantic HTML&lt;/h3&gt;
+            &lt;figure&gt;
+                &lt;img src="semantic.png" alt="Semantic layout example"&gt;
+                &lt;figcaption&gt;A diagram illustrating semantic layout.&lt;/figcaption&gt;
+            &lt;/figure&gt;
+            &lt;p&gt;Semantic HTML helps define the meaning of your content...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+
+    &lt;aside&gt;
+        &lt;h4&gt;About This Blog&lt;/h4&gt;
+        &lt;p&gt;Tips for writing clean, accessible HTML and CSS.&lt;/p&gt;
+    &lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;&copy; 2025 My Web Development Blog&lt;/p&gt;
+&lt;/footer&gt;
+    </code></pre>
+</section>
+
+        </section>
+        <br>
+    </main>
+    <footer><small>Grace Harrell &copy 2025</small></footer>  
+    
+</body>
+
+
+
+</html>
