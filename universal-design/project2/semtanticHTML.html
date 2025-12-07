@@ -28,87 +28,79 @@
         <br>
         <section>
             <h2>Tags</h2>
-            <p>Lets go over the semantic meaning of common tags...
-                <ul>
-                    <li>&lt;header&gt; — Introductory content for a page or section.</li>
-                    <li>&lt;footer&gt; — Closing section containing metadata or links.</li>
-                    <li>&lt;h1 ... h6&gt; — Hierarchical headings that structure content.</li>
-                    <li>&lt;main&gt; — The primary, unique content of the page.</li>
-                    <li>&lt;nav&gt; — Major navigational links for the site or section.</li>
-                    <li>&lt;section&gt; — A thematic grouping of related content.</li>
-                    <li>&lt;aside&gt; — Supplementary or tangential information.</li>
-                    <li>&lt;figcaption&gt; — A caption describing a figure.</li>
-                </ul>
-            </p>
-
+            <p>Lets go over the semantic meaning of common tags...</p>
+            <ul>
+                <li>&lt;header&gt; — Introductory content for a page or section.</li>
+                <li>&lt;footer&gt; — Closing section containing metadata or links.</li>
+                <li>&lt;h1 ... h6&gt; — Hierarchical headings that structure content.</li>
+                <li>&lt;main&gt; — The primary, unique content of the page.</li>
+                <li>&lt;nav&gt; — Major navigational links for the site or section.</li>
+                <li>&lt;section&gt; — A thematic grouping of related content.</li>
+                <li>&lt;aside&gt; — Supplementary or tangential information.</li>
+                <li>&lt;figcaption&gt; — A caption describing a figure.</li>
+            </ul>
         </section>
         <br>
-        <section>
-            <section>
-    <h2>Structure</h2>
+    <section>
+        <h2>Structure</h2>
 
-    <p>
-        A typical structure begins with a &lt;header&gt; that introduces the site or page, 
-        often followed by a &lt;nav&gt; element containing the main navigation links. 
-        The core content is placed inside &lt;main&gt;, which should appear only once 
-        and contain the primary information users come for.
-    </p>
+        <p>
+            A typical structure begins with a &lt;header&gt; that introduces the site or page, 
+            often followed by a &lt;nav&gt; element containing the main navigation links. 
+            The core content is placed inside &lt;main&gt;, which should appear only once 
+            and contain the primary information users come for.
+        </p>
 
-    <p>
-        Within &lt;main&gt;, you can divide content using &lt;section&gt; to establish 
-        thematic areas or &lt;article&gt;for pieces of content that could stand alone. 
-        Headings (&lt;h1&gt; through &lt;h6&gt;) should be used in order to create a clear outline 
-        that reflects your content hierarchy. Supplementary or tangential information, such as sidebars 
-        or related links, belongs inside an &lt;aside&gt; so that assistive technologies can easily 
-        distinguish it from the main flow. Finally, a &lt;footer&gt; closes the page or section with 
-        metadata, links, or additional information.
-    </p>
-    <figure class="code-example">
-        <figcaption>Example of Semantic HTML Structure</figcaption>
-        <pre>
-            <code class="language-html">
-                &lt;header&gt;
-                    &lt;h1&gt;My Website&lt;/h1&gt;
-                    &lt;nav&gt;
-                        &lt;ul&gt;
-                        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
-                        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/nav&gt;
-                &lt;/header&gt;
+        <p>
+            Within &lt;main&gt;, you can divide content using &lt;section&gt; to establish 
+            thematic areas or &lt;article&gt;for pieces of content that could stand alone. 
+            Headings (&lt;h1&gt; through &lt;h6&gt;) should be used in order to create a clear outline 
+            that reflects your content hierarchy. Supplementary or tangential information, such as sidebars 
+            or related links, belongs inside an &lt;aside&gt; so that assistive technologies can easily 
+            distinguish it from the main flow. Finally, a &lt;footer&gt; closes the page or section with 
+            metadata, links, or additional information.
+        </p>
+        <figure class="code-example">
+            <figcaption>Example of Semantic HTML Structure</figcaption>
+            <pre>
+                <code class="language-html">
+                    &lt;header&gt;
+                        &lt;h1&gt;My Website&lt;/h1&gt;
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/header&gt;
 
-                &lt;main&gt;
-                &lt;article&gt;
-                    &lt;h2&gt;Universal Design Principles&lt;/h2&gt;
-                    &lt;p&gt;Good design is accessible to everyone.&lt;/p&gt;
+                    &lt;main&gt;
+                    &lt;article&gt;
+                        &lt;h2&gt;Universal Design Principles&lt;/h2&gt;
+                        &lt;p&gt;Good design is accessible to everyone.&lt;/p&gt;
 
-                    &lt;figure&gt;
-                    &lt;img 
-                        src="images/universal-design-diagram.png"
-                        alt="Diagram showing seven principles of universal design."
-                    /&gt;
-                    &lt;figcaption&gt;Illustration of universal design principles.&lt;/figcaption&gt;
-                    &lt;/figure&gt;
+                        &lt;figure&gt;
+                        &lt;img 
+                            src="images/universal-design-diagram.png"
+                            alt="Diagram showing seven principles of universal design."
+                        /&gt;
+                        &lt;figcaption&gt;Illustration of universal design principles.&lt;/figcaption&gt;
+                        &lt;/figure&gt;
 
-                &lt;/article&gt;
-                &lt;/main&gt;
+                    &lt;/article&gt;
+                    &lt;/main&gt;
 
-                &lt;footer&gt;
-                &lt;p&gt;&copy; 2025 My Website&lt;/p&gt;
-                &lt;/footer&gt;
+                    &lt;footer&gt;
+                    &lt;p&gt;&copy; 2025 My Website&lt;/p&gt;
+                    &lt;/footer&gt;
 
-            </code>
-        </pre>
-    </figure>
-
-    
-</section>
-
-        </section>
-        <br>
+                </code>
+            </pre>
+        </figure>
+    </section>
     </main>
-    <footer><small>Grace Harrell &copy 2025</small></footer>  
+    <footer><small>Grace Harrell &amp;copy 2025</small></footer>  
     
 </body>
 
