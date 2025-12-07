@@ -75,13 +75,20 @@ main {grid-area: mainy; background: rgb(254, 255, 243); text-align: left; paddin
 footer {grid-area: footy; background: rgba(0, 102, 58, 0.723);}
 
 main section {
-    margin: 10px 50px;
+    margin: 10px 0px;
+    background-color: beige;
+    border: 2px solid black;
+    padding: 15px;
+}
+main section section {
+    border: none;
 }
 
 nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    
 }
 
 nav ul li{
@@ -91,9 +98,9 @@ nav ul li{
 nav ul li a {
 display: block;
 padding: 20px 20px;
-margin: 2px;
-background: rgb(254, 255, 243);
-border-radius: 10px;
+margin: 0 auto;
+background: beige;
+border: 2px solid black;
 font-size: large;
 text-decoration: none;
 color: black;
@@ -101,15 +108,8 @@ text-align: center;
 }
 
 nav ul li a:hover {
-background: rgb(113, 248, 194);
+background: rgb(154, 251, 137);
 
-}
-
-.nav-link {
-background: green;
-}
-.nav-link:hover{
-    background: pink; 
 }
 
 p, ul {
@@ -147,12 +147,8 @@ nav ul {
     text-align: center;
   }
   nav ul li a {
-    display: block;
-    border-radius: 10px;
     padding: 10px 5px;
     margin: 5px;
-    border: 1px black solid;
-    background: white;
   
   }
 }
