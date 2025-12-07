@@ -27,17 +27,18 @@
         <br>
         <section>
             <h2>Tags</h2>
-            <p>Lets go over the semantic meaning of common tags...</p>
-            <ul>
-                <li>&lt;header&gt; — Introductory content for a page or section.</li>
-                <li>&lt;footer&gt; — Closing section containing metadata or links.</li>
-                <li>&lt;h1 ... h6&gt; — Hierarchical headings that structure content.</li>
-                <li>&lt;main&gt; — The primary, unique content of the page.</li>
-                <li>&lt;nav&gt; — Major navigational links for the site or section.</li>
-                <li>&lt;section&gt; — A thematic grouping of related content.</li>
-                <li>&lt;aside&gt; — Supplementary or tangential information.</li>
-                <li>&lt;figcaption&gt; — A caption describing a figure.</li>
-            </ul>
+            <p>Lets go over the semantic meaning of common tags...
+                <ul>
+                    <li>&lt;header&gt; — Introductory content for a page or section.</li>
+                    <li>&lt;footer&gt; — Closing section containing metadata or links.</li>
+                    <li>&lt;h1 ... h6&gt; — Hierarchical headings that structure content.</li>
+                    <li>&lt;main&gt; — The primary, unique content of the page.</li>
+                    <li>&lt;nav&gt; — Major navigational links for the site or section.</li>
+                    <li>&lt;section&gt; — A thematic grouping of related content.</li>
+                    <li>&lt;aside&gt; — Supplementary or tangential information.</li>
+                    <li>&lt;figcaption&gt; — A caption describing a figure.</li>
+                </ul>
+            </p>
 
         </section>
         <br>
@@ -61,43 +62,46 @@
         distinguish it from the main flow. Finally, a &lt;footer&gt; closes the page or section with 
         metadata, links, or additional information.
     </p>
+    <figure class="code-example">
+        <figcaption>Example of Semantic HTML Structure</figcaption>
+        <pre>
+            <code class="language-html">
+                &lt;header&gt;
+                    &lt;h1&gt;My Website&lt;/h1&gt;
+                    &lt;nav&gt;
+                        &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/nav&gt;
+                &lt;/header&gt;
 
-    <h3>Example of a Semantic Page Structure</h3>
+                &lt;main&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Universal Design Principles&lt;/h2&gt;
+                    &lt;p&gt;Good design is accessible to everyone.&lt;/p&gt;
 
-    <pre><code>
-&lt;header&gt;
-    &lt;h1&gt;My Web Development Blog&lt;/h1&gt;
-    &lt;nav&gt;
-        &lt;a href="/"&gt;Home&lt;/a&gt;
-        &lt;a href="/tutorials"&gt;Tutorials&lt;/a&gt;
-        &lt;a href="/about"&gt;About&lt;/a&gt;
-    &lt;/nav&gt;
-&lt;/header&gt;
+                    &lt;figure&gt;
+                    &lt;img 
+                        src="images/universal-design-diagram.png"
+                        alt="Diagram showing seven principles of universal design."
+                    /&gt;
+                    &lt;figcaption&gt;Illustration of universal design principles.&lt;/figcaption&gt;
+                    &lt;/figure&gt;
 
-&lt;main&gt;
-    &lt;section&gt;
-        &lt;h2&gt;Latest Posts&lt;/h2&gt;
+                &lt;/article&gt;
+                &lt;/main&gt;
 
-        &lt;article&gt;
-            &lt;h3&gt;Understanding Semantic HTML&lt;/h3&gt;
-            &lt;figure&gt;
-                &lt;img src="semantic.png" alt="Semantic layout example"&gt;
-                &lt;figcaption&gt;A diagram illustrating semantic layout.&lt;/figcaption&gt;
-            &lt;/figure&gt;
-            &lt;p&gt;Semantic HTML helps define the meaning of your content...&lt;/p&gt;
-        &lt;/article&gt;
-    &lt;/section&gt;
+                &lt;footer&gt;
+                &lt;p&gt;&copy; 2025 My Website&lt;/p&gt;
+                &lt;/footer&gt;
 
-    &lt;aside&gt;
-        &lt;h4&gt;About This Blog&lt;/h4&gt;
-        &lt;p&gt;Tips for writing clean, accessible HTML and CSS.&lt;/p&gt;
-    &lt;/aside&gt;
-&lt;/main&gt;
+            </code>
+        </pre>
+    </figure>
 
-&lt;footer&gt;
-    &lt;p&gt;&copy; 2025 My Web Development Blog&lt;/p&gt;
-&lt;/footer&gt;
-    </code></pre>
+    
 </section>
 
         </section>
