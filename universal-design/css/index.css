@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+ background-color: rgb(218, 39, 105);
+}
+h1,
+h2,
+h3 {
+    font-family: serif;
+    font-weight: normal;
+    text-align: center;
+}
+ p{
+    font-family: sans-serif;
+ }
+
+img {
+    padding: inherit;
+    margin:auto;
+    width: 150px;
+    display: block;
+    float: right;
+    margin: 0px 0px 15px 20px;
+}
+.container {
+    margin: 0 auto;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "heady heady"
+    "mainy navvy"
+    "mainy navvy"
+    "mainy navvy"
+    "footy footy";
+}
+
+header{
+    grid-area: heady;
+    background-color: antiquewhite;
+    margin: auto 20px;
+    padding: 7px 7px;
+    border-radius: 10px;
+}
+main{
+    grid-area: mainy; align-items: center;
+    background-color: antiquewhite;
+    margin: 0 20px;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+nav{
+    grid-area: navvy;
+    background-color: antiquewhite;
+    margin: 0px 20px;
+    border-radius: 10px;
+}
+footer{
+    grid-area: footy; text-align: center;
+    background-color: antiquewhite;
+    margin: auto 0px;
+    padding: 10px;
+}
+
+@media screen
+  and (max-width: 1400px)  {
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "heady"
+  "mainy"
+  "navvy"
+  "footy";
+}
+header,
+nav,
+main,
+footer{
+    margin: 10px auto;
+}
+
+}
